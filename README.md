@@ -5,6 +5,7 @@
 cd /opt/
 mkdir /opt/file-manager
 mkdir /opt/file-manager/data
+mkdir /opt/file-manager/var
 mkdir /opt/file-manager/var/prod
 ```
 
