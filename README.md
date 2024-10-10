@@ -65,7 +65,7 @@ server {
 #### >>> Replace `crossroadscambodia.church` with your actual domain name.
 #### >>> Replace `http://192.168.10.111:7003` with your actual service url.
 #### >>> Update `/opt/https-httpd/fullchain.pem` and `/opt/https-httpd/privkey.pem` with the paths to your SSL certificate and key files.
-#### >>> If you don't have SSL certificates, you may generate using this guideline: `https://github.com/rongroeung/apache-httpd-https?tab=readme-ov-file#i-generate-ssltls-certificate`
+#### >>> If you don't have SSL certificates, you may generate using this guideline: https://github.com/rongroeung/apache-httpd-https?tab=readme-ov-file#i-generate-ssltls-certificate
 
 ### 2. Test Nginx Configuration
 #### >>> Before restarting Nginx, it's a good practice to test the configuration for syntax errors:
