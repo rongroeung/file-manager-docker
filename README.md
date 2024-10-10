@@ -3,9 +3,9 @@
 ### 1. Create a folder on path `/opt`
 ```
 cd /opt/
-mkdir /file-manager
-mkdir /file-manager/data
-mkdir /file-manager/var/prod
+mkdir /opt/file-manager
+mkdir /opt/file-manager/data
+mkdir /opt/file-manager/var/prod
 ```
 
 ### 2. Create `docker-compose.yml` file
