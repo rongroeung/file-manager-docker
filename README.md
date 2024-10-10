@@ -1,4 +1,4 @@
-# Setup Online File Manager Using Docker
+# Setup File Manager Using Docker
 ## I. Create Working Directory for File Manager
 ### 1. Create a folder on path `/opt`
 ```
@@ -39,7 +39,11 @@ docker compose up -d
 ## II. Configure HTTPS Using Nginx Proxy
 
 ### 1. Add Configuration File for Internal Service
-#### >>> Create a `file-manager.conf` on path `/etc/nginx/conf.d` with the following content:
+#### >>> Create a `file-manager.conf` on path `/etc/nginx/conf.d`
+```
+vi /etc/nginx/conf.d/file-manager.conf
+```
+#### >>> Paste the following content:
 ```
 server {
     listen 7004 ssl;
