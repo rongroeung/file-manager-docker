@@ -35,7 +35,7 @@ cd /opt/file-manager/var/prod
 docker compose up -d
 ```
 
-## II. Configure HTTPS Proxy with Internal Service
+## II. Configure HTTPS Using Nginx Proxy
 
 ### 1. Add Configuration File for Internal Service
 #### >>> Create a `file-manager.conf` on path `/etc/nginx/conf.d` with the following content:
