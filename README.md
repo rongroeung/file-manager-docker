@@ -26,7 +26,7 @@ services:
     volumes:
       - /opt/file-manager/data:/data
     environment:
-      - FB_BASEURL=/file-manager
+      - FB_BASEURL=/filebrowser
     restart: always
 ```
 
