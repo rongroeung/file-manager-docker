@@ -5,13 +5,11 @@
 cd /opt/
 mkdir /opt/file-manager
 mkdir /opt/file-manager/data
-mkdir /opt/file-manager/var
-mkdir /opt/file-manager/var/prod
 ```
 
 ### 2. Create `docker-compose.yml` file
 ```
-cd /opt/file-manager/var/prod
+cd /opt/file-manager
 vi docker-compose.yml
 ```
 #### >>> Paste the following content:
@@ -19,7 +17,7 @@ vi docker-compose.yml
 version: '3.8'
 
 services:
-  filebrowser:
+  service:
     image: hurlenko/filebrowser
     ports:
       - 7003:8080
@@ -32,7 +30,7 @@ services:
 
 ### 3. Start Container Using docker compose
 ```
-cd /opt/file-manager/var/prod
+cd /opt/file-manager
 docker compose up -d
 ```
 
