@@ -2,14 +2,14 @@
 ## I. Create Working Directory for File Manager
 ### 1. Create a folder on path `/opt`
 ```
-cd /opt/
-mkdir /opt/file-manager
-mkdir /opt/file-manager/data
+cd /mnt/
+mkdir /mnt/file-manager
+mkdir /mnt/file-manager/data
 ```
 
 ### 2. Create `docker-compose.yml` file
 ```
-cd /opt/file-manager
+cd /mnt/file-manager
 vi docker-compose.yml
 ```
 #### >>> Paste the following content:
@@ -22,7 +22,7 @@ services:
     ports:
       - 7003:8080
     volumes:
-      - /opt/file-manager/data:/data
+      - /mnt/file-manager/data:/data
     environment:
       - FB_BASEURL=/filebrowser
     restart: always
@@ -30,7 +30,7 @@ services:
 
 ### 3. Start Container Using docker compose
 ```
-cd /opt/file-manager
+cd /mnt/file-manager
 docker compose up -d
 ```
 
