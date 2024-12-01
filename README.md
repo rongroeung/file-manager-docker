@@ -51,6 +51,7 @@ server {
     ssl_certificate_key /opt/https-httpd/privkey.pem;
 
     location / {
+        client_max_body_size 0;
         proxy_pass http://192.168.10.111:7003;  # URL of file-manager service
         proxy_set_header Host $host;
         proxy_set_header X-Real-IP $remote_addr;
