@@ -45,7 +45,7 @@ vi /etc/nginx/conf.d/file-manager.conf
 ```
 server {
     listen 7004 ssl;
-    server_name crossroadscambodia.church;
+    server_name crossroadscambodia.org;
 
     ssl_certificate /opt/https-httpd/fullchain.pem;
     ssl_certificate_key /opt/https-httpd/privkey.pem;
@@ -61,7 +61,7 @@ server {
 }
 ```
 #### >>> Replace `7004` with your desired https port.
-#### >>> Replace `crossroadscambodia.church` with your actual domain name.
+#### >>> Replace `crossroadscambodia.org` with your actual domain name.
 #### >>> Replace `http://192.168.10.111:7003` with your actual service url.
 #### >>> Update `/opt/https-httpd/fullchain.pem` and `/opt/https-httpd/privkey.pem` with the paths to your SSL certificate and key files.
 #### >>> If you don't have SSL certificates, you may generate using this guideline: https://github.com/rongroeung/apache-httpd-https?tab=readme-ov-file#i-generate-ssltls-certificate
@@ -81,7 +81,7 @@ systemctl restart nginx
 
 ## III. Access File Manager in Browser
 ### 1. Login to File Manager
-#### >>> URL: https://crossroadscambodia.church:7004/
+#### >>> URL: https://crossroadscambodia.org:7004/
 #### >>> The default username is `admin`, and the password is `admin`
 
 ### 2. Change Password for `admin` (Optional)
