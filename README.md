@@ -5,6 +5,7 @@
 cd /mnt/
 mkdir /mnt/file-manager
 mkdir /mnt/file-manager/data
+mkdir /mnt/file-manager/config
 ```
 
 ### 2. Create `docker-compose.yml` file
@@ -17,12 +18,14 @@ vi docker-compose.yml
 version: '3.8'
 
 services:
-  service:
+  file-manager:
     image: hurlenko/filebrowser
+    user: "${UID}:${GID}"
     ports:
       - 7003:8080
     volumes:
       - /mnt/file-manager/data:/data
+      - /mnt/file-manager/config:/config
     environment:
       - FB_BASEURL=/filebrowser
     restart: always
