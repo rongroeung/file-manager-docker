@@ -82,7 +82,7 @@ systemctl restart nginx
 ## III. Access File Manager in Browser
 ### 1. Login to File Manager
 #### >>> URL: https://crossroadscambodia.org:7004/
-#### >>> The default username is `admin`, and the password is `admin`
+#### >>> The default username is `admin`, and the password is randomly generated (You can find it in log of docker container)
 
 ### 2. Change Password for `admin` (Optional)
 #### >>> Go to `Settings` -> `Profile Settings` -> `Change Password` -> Input Your New Password -> `UPDATE`
