@@ -20,7 +20,6 @@ version: '3.8'
 services:
   file-manager:
     image: hurlenko/filebrowser
-    user: "${UID}:${GID}"
     ports:
       - 7003:8080
     volumes:
